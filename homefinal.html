@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon"  href="finalpics/AR favicon.jpg">
+<title>Final</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button"> Augmented Reality</a>
+    
+    <form name="Tick">
+<input type="text" size="11" name="Clock">
+</form>
+<script>
+<!--
+/*By George Chiang (JK's JavaScript tutorial)
+http://javascriptkit.com
+Credit must stay intact for use*/
+function show(){
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn="AM"
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+document.Tick.Clock.value=hours+":"+minutes+":"
++seconds+" "+dn
+setTimeout("show()",1000)
+}
+show()
+//-->
+</script>
+
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Early Augmented Reality</a>
+      <a href="#menu" class="w3-bar-item w3-button">Sensorama</a>
+      <a href="#contact" class="w3-bar-item w3-button">Pages</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="finalpics/augmented reality.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Augmented Reality
+  </h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="finalpics/minecraftearth ar.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Early Augmented Reality</h1><br>
+      <h5 class="w3-center">Briefly first acheived in 1957</h5>
+      <p class="w3-large">Augmented Reality was first acheived by Morton Heilig in 1957 with an invention called the <span class="w3-tag w3-light-grey">Sensorama</span> it wasn't a very effective invention but it got the job done for what it was made to do. However the term "Augmented Reality" didn't exist/coined until 1990 which was shortly coined after Virtual Reality was.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">   </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Sensorama</h1><br>
+      <h4>About Sensorama</h4>
+      <p class="w3-text-grey">The sensorama was a very odd invention at the time of 1957 nothing was really happening at this moment except for the cold war. The experience was making you feel something else as you stood in one place. It could be called virtual reality but I would argue that it isn't. The reason why I think that it isn't Virtual Reality is necesarily based on the fact that you can move around & see mostly a whole new world. While Augmented Reality takes the world & makes  </p><br>
+    
+     
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="finalpics/sensorama.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+  
+<!-- End page content -->
+  <div class="w3-container w3-padding-64" id="contact">
+     
+      <p><button class="w3-button w3-section" type="submit"></button></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Pages <a href="homefinal.html"  class="w3-hover-text-green">1 </a>
+  <a href="page2final.html" title="W3.CSS" class="w3-hover-text-green"> 2 </a>
+  <a href="page3final.html" title="W3.CSS" class="w3-hover-text-green"> 3 </a>
+  </p>
+</footer>
+
+</body>
+</html>

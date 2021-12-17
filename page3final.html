@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="icon"  href="finalpics/AR favicon.jpg">
+
+<title>Augmented Reality</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+</head>
+<body>
+  
+  
+     <form name="Tick">
+<input type="text" size="11" name="Clock">
+</form>
+<script>
+<!--
+/*By George Chiang (JK's JavaScript tutorial)
+http://javascriptkit.com
+Credit must stay intact for use*/
+function show(){
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn="AM"
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+document.Tick.Clock.value=hours+":"+minutes+":"
++seconds+" "+dn
+setTimeout("show()",1000)
+}
+show()
+//-->
+</script>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">Augmented Reality</a>
+    <a href="#about" class="w3-right w3-button w3-white">About</a>
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="finalpics/Augmented trees.jpg" style="width:100%">
+      <img src="finalpics/AR marketing.jpg" style="width:100%">
+      <img src="finalpics/AR healthcare.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="finalpics/AR phone.jpg" style="width:100%">
+      <img src="finalpics/pokemon1.jpg" style="width:100%" height ="970">
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h2>About</h2>
+  <img src="finalpics/AR in healthcare.jpg" class="w3-image w3-padding-32" width="300" height="300">
+  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+    <p>In the Medical part of the world Augmented Reality has become a huge part in helping people that need the assistance. A good example would be helping to train new nurses with dummys instead of actual patients. It can also help some affected by partial blindness. It can help nurses & doctors alike both with learning the human body and experimenting with what might go wrong during a treatment. Overall there is no limit for what Augmented Reality can do in the medical field for both patients and health providers alike.</p>
+
+  </form>
+  <br>
+  <p>Pages <a href="homefinal.html"  class="w3-hover-text-green">1 </a>
+  <a href="page2final.html" title="W3.CSS" class="w3-hover-text-green"> 2 </a>
+  <a href="page3final.html" title="W3.CSS" class="w3-hover-text-green"> 3 </a>
+  </p>
+</footer>
+ 
+</body>
+</html>
